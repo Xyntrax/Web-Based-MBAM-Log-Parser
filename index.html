@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MBAM Log Parser</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;900&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MBAM LOG PARSER</h1>
+            <p class="subtitle">Upload MBAM scan logs (JSON) collected by MBST</p>
+        </header>
+
+        <div class="drop-zone" id="dropZone">
+            <div class="drop-icon">&#128196;</div>
+            <p class="drop-text">drag &amp; drop the logs here</p>
+            <div class="drop-divider"></div>
+            <p class="drop-small">or click to browse</p>
+            <input type="file" id="fileInput" multiple accept=".json" />
+        </div>
+
+        <div class="file-list" id="fileList"></div>
+
+        <button class="btn btn-parse" id="parseBtn" disabled>PARSE LOGS</button>
+
+        <div class="results" id="results">
+            <h2>RESULTS</h2>
+            <div class="stats" id="stats"></div>
+            <div class="downloads" id="downloads"></div>
+        </div>
+
+        <div class="footer">
+            <span>a web-based MBAM log parser for malware removal helpers to ease log analysis.</span>
+            <span>built by xyntrax</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
