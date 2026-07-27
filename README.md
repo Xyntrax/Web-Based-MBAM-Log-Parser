@@ -1,4 +1,4 @@
-# Web Based MBAM Log Parser
+# MBAM Web Parser
 
 A web based version of the **MBAM** Log Parser for parsing logs collected by **MBST**.
 
